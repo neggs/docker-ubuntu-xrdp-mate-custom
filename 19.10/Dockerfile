@@ -24,8 +24,6 @@ RUN cd /root && \
         xterm \
         curl \
         wget \
-        firefox \
-        bleachbit \
         epiphany-browser && \
     ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime && dpkg-reconfigure -f noninteractive tzdata && \
     apt-get -y install \
