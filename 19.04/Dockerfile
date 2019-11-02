@@ -16,28 +16,7 @@ RUN cd /root && \
     locale-gen en_GB.UTF-8 && \ 
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
-        mate-desktop-environment-core \
-        mate-themes \
-        mate-accessibility-profiles \
-        mate-applet-appmenu \
-        mate-applet-brisk-menu \
-        mate-applets \
-        mate-applets-common \
-        mate-calc \
-        mate-calc-common \
-        mate-dock-applet \
-        mate-hud \
-        mate-indicator-applet \
-        mate-indicator-applet-common \
-        mate-menu \
-        mate-notification-daemon \
-        mate-notification-daemon-common \
-        mate-utils \
-        mate-utils-common \
-        mate-window-applets-common \
-        mate-window-buttons-applet \
-        mate-window-menu-applet \
-        mate-window-title-applet \
+        kde-plasma-desktop \
         ubuntu-mate-icon-themes \
         ubuntu-mate-themes \
         tightvncserver && \
@@ -51,6 +30,8 @@ RUN cd /root && \
         xterm \
         curl \
         wget \
+        firefox \
+        bleachbit \
         epiphany-browser && \
     ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime && dpkg-reconfigure -f noninteractive tzdata && \
     apt-get -y install \
