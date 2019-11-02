@@ -10,8 +10,6 @@ RUN cd /root && \
     apt-get install -yqq locales  && \ 
     apt-get install -yqq \
         kde-plasma-desktop \
-        firefox \
-        bleachbit \
         ubuntu-mate-icon-themes \
         ubuntu-mate-themes \
         tightvncserver \
@@ -26,6 +24,8 @@ RUN cd /root && \
         xterm \
         curl \
         wget \
+        firefox \
+        bleachbit \
         epiphany-browser && \
     ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime && dpkg-reconfigure -f noninteractive tzdata && \
     apt-get -y install \
