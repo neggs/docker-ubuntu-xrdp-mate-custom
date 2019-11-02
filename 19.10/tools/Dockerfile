@@ -1,4 +1,4 @@
-FROM rattydave/docker-ubuntu-xrdp-mate-custom:19.10
+FROM neggs/docker-ubuntu-xrdp-mate-custom:19.10
 
 WORKDIR /root
 
