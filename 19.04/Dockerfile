@@ -16,7 +16,9 @@ RUN cd /root && \
     locale-gen en_GB.UTF-8 && \ 
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
+        kwin-x11 \
         kde-plasma-desktop \
+        plasma-workspace \ 
         ubuntu-mate-icon-themes \
         ubuntu-mate-themes \
         tightvncserver && \
