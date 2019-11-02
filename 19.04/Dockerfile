@@ -16,8 +16,6 @@ RUN cd /root && \
     locale-gen en_GB.UTF-8 && \ 
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
-        ubuntu-minimal \
-        ubuntu-standard \
         neon-desktop \
         neon-all \
         plasma-workspace-wayland \
