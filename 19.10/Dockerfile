@@ -11,7 +11,7 @@ RUN cd /root && \
     apt-get install -yqq \
         kde-plasma-desktop \
         firefox \
-        bleachbit 
+        bleachbit \
         ubuntu-mate-icon-themes \
         ubuntu-mate-themes \
         tightvncserver \
