@@ -16,8 +16,7 @@ RUN cd /root && \
     locale-gen en_GB.UTF-8 && \ 
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
-        neon-desktop \
-        neon-all \
+        kde-plasma-desktop \
         plasma-workspace-wayland \
         kwin-wayland \
         kwin-wayland-backend-x11 \
