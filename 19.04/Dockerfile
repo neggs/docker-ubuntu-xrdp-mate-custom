@@ -1,4 +1,4 @@
-FROM ubuntu:19.04
+ROM ubuntu:19.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
@@ -16,9 +16,9 @@ RUN cd /root && \
     locale-gen en_GB.UTF-8 && \ 
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
-        kubuntu-desktop \ 
-        kde-plasma-desktop \
+        tasksel \
         tightvncserver && \
+    tasksel install kubuntu-desktop && \
     apt-get install --no-install-recommends -yqq \
         supervisor \
         sudo \
