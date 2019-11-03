@@ -20,7 +20,6 @@ RUN cd /root && \
         sddm \
         x11-xkb-utils \
         tightvncserver && \
-    setxkbmap -gb && \
     tasksel install kubuntu-desktop && \
     apt-get install --no-install-recommends -yqq \
         supervisor \
