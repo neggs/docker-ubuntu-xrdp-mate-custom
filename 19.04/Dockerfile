@@ -16,11 +16,8 @@ RUN cd /root && \
     locale-gen en_GB.UTF-8 && \ 
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
-        tasksel \
-        sddm \
-        x11-xkb-utils \
+        kubuntu-desktop \
         tightvncserver && \
-    tasksel install kubuntu-desktop && \
     apt-get install --no-install-recommends -yqq \
         supervisor \
         sudo \
