@@ -18,7 +18,9 @@ RUN cd /root && \
     apt-get install -yqq \
         tasksel \
         sddm \
+        x11-xkb-utils \
         tightvncserver && \
+    setxkbmap -gb && \
     tasksel install kubuntu-desktop && \
     apt-get install --no-install-recommends -yqq \
         supervisor \
@@ -64,7 +66,7 @@ RUN cd /root && \
     cd /root/xorgxrdp  && ./bootstrap && ./configure && make && make install && \
     rm -R /root/xrdp && \
     rm -R /root/xorgxrdp && \
-   apt-get -y purge \
+    apt-get -y purge \
         git \
         libxfont-dev \
         libx11-dev \
@@ -90,7 +92,7 @@ RUN cd /root && \
     apt-get -y autoclean && apt-get -y autoremove && \
     apt-get -y purge $(dpkg --get-selections | grep deinstall | sed s/deinstall//g) && \
     rm -rf /var/lib/apt/lists/*  && \
-    echo "mate-session" > /etc/skel/.xsession && \
+    echo "startkde" > /etc/skel/.xsession && \
     sed -i '/TerminalServerUsers/d' /etc/xrdp/sesman.ini  && \
     sed -i '/TerminalServerAdmins/d' /etc/xrdp/sesman.ini  && \
     sed -i -e '/DisconnectedTimeLimit=/ s/=.*/=0/' /etc/xrdp/sesman.ini && \
