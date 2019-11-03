@@ -17,6 +17,7 @@ RUN cd /root && \
     update-locale LANG=en_GB.UTF-8  && \ 
     apt-get install -yqq \
         tasksel \
+        sddm \
         tightvncserver && \
     tasksel install kubuntu-desktop && \
     apt-get install --no-install-recommends -yqq \
