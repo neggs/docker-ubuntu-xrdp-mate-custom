@@ -9,6 +9,7 @@ RUN cd /root && \
     apt-get update -y && \ 
     apt-get install -yqq locales  && \ 
     apt-get install -yqq \
+        kubuntu-desktop \ 
         kde-plasma-desktop \
         ubuntu-mate-icon-themes \
         ubuntu-mate-themes \
